@@ -1,4 +1,4 @@
-library animated_switcher;
+library rotated_animated_switcher;
 
 import 'package:flutter/material.dart';
 
@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 /// This widget provides a customizable switcher with animated transitions and optional rotation.
 /// It is similar to the iOS-style Cupertino switcher but with additional customization options.
 
-class CustomCupertinoSwitcher extends StatefulWidget {
+class RotatedAnimatedSwitcher extends StatefulWidget {
 
   /// The initial value of the switcher.
   final bool initialValue;
@@ -30,12 +30,12 @@ class CustomCupertinoSwitcher extends StatefulWidget {
   /// The duration of the animations.
   final Duration? duration;
 
-  /// Creates a [CustomCupertinoSwitcher] widget.
+  /// Creates a [RotatedAnimatedSwitcher] widget.
   ///
   /// The [initialValue] parameter is required. The [shouldRotate] parameter defaults to false.
 
 
-  const CustomCupertinoSwitcher({
+  const RotatedAnimatedSwitcher({
     super.key,
     required this.initialValue,
     this.width,
@@ -47,10 +47,10 @@ class CustomCupertinoSwitcher extends StatefulWidget {
   });
 
   @override
-  State<CustomCupertinoSwitcher> createState() => _CustomCupertinoSwitcherState();
+  State<RotatedAnimatedSwitcher> createState() => _RotatedAnimatedSwitcherState();
 }
 
-class _CustomCupertinoSwitcherState extends State<CustomCupertinoSwitcher> {
+class _RotatedAnimatedSwitcherState extends State<RotatedAnimatedSwitcher> {
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
