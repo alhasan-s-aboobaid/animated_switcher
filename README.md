@@ -13,7 +13,7 @@ A custom Animated Cupertino-style switcher widget with animated transitions and 
 Add this to your package's `pubspec.yaml` file:
 ```
 dependencies:
-  rotated_animated_switcher: ^0.0.1
+  rotated_animated_switcher: ^0.0.2
 ```
 
 
