@@ -3,7 +3,7 @@ description: A custom Cupertino-style switcher widget with animated transitions 
 version: 0.0.1
 homepage: https://github.com/alhasan-s-aboobaid/animated_switcher
 repository: https://github.com/alhasan-s-aboobaid/animated_switcher
-
+license: MIT
 environment:
   sdk: '>=2.19.6 <3.0.0'
   flutter: ">=1.17.0"
