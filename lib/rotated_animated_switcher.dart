@@ -8,7 +8,6 @@ import 'package:flutter/material.dart';
 /// It is similar to the iOS-style Cupertino switcher but with additional customization options.
 
 class RotatedAnimatedSwitcher extends StatefulWidget {
-
   /// The initial value of the switcher.
   final bool initialValue;
 
@@ -34,7 +33,6 @@ class RotatedAnimatedSwitcher extends StatefulWidget {
   ///
   /// The [initialValue] parameter is required. The [shouldRotate] parameter defaults to false.
 
-
   const RotatedAnimatedSwitcher({
     super.key,
     required this.initialValue,
@@ -47,7 +45,8 @@ class RotatedAnimatedSwitcher extends StatefulWidget {
   });
 
   @override
-  State<RotatedAnimatedSwitcher> createState() => _RotatedAnimatedSwitcherState();
+  State<RotatedAnimatedSwitcher> createState() =>
+      _RotatedAnimatedSwitcherState();
 }
 
 class _RotatedAnimatedSwitcherState extends State<RotatedAnimatedSwitcher> {
@@ -65,7 +64,8 @@ class _RotatedAnimatedSwitcherState extends State<RotatedAnimatedSwitcher> {
       ),
       child: AnimatedAlign(
         duration: widget.duration ?? const Duration(milliseconds: 500),
-        alignment: widget.initialValue ? Alignment.centerRight : Alignment.centerLeft,
+        alignment:
+            widget.initialValue ? Alignment.centerRight : Alignment.centerLeft,
         child: Container(
           width: (widget.height ?? 24) - 3,
           height: (widget.height ?? 24) - 3,
@@ -80,7 +80,9 @@ class _RotatedAnimatedSwitcherState extends State<RotatedAnimatedSwitcher> {
               turns: widget.shouldRotate ? (widget.initialValue ? 1 : 0.5) : 0,
               child: Icon(
                 Icons.check,
-                color: widget.initialValue ? (widget.activeColor ?? Theme.of(context).primaryColor) : Colors.white,
+                color: widget.initialValue
+                    ? (widget.activeColor ?? Theme.of(context).primaryColor)
+                    : Colors.white,
                 size: 12,
               ),
             ),
