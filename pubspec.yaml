@@ -1,6 +1,6 @@
 name: rotated_animated_switcher
 description: A custom Cupertino-style switcher widget with animated transitions and optional rotation.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/alhasan-s-aboobaid/animated_switcher
 repository: https://github.com/alhasan-s-aboobaid/animated_switcher
 license: MIT
